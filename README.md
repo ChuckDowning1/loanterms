@@ -40,8 +40,8 @@ The project analyzes loan agreements to:
 
 1. Clone this repository:
    ```
-   git clone <repository-url>
-   cd loan-term-extractor
+   git clone https://github.com/ChuckDowning1/loanterms.git
+   cd loanterms
    ```
 
 2. Create a virtual environment and install dependencies:
@@ -155,4 +155,12 @@ The final CSV output contains:
 The multi-level deduplication typically achieves:
 - 30-40% reduction at the document level compared to basic deduplication
 - 10-20% further reduction at the corpus level
-- Overall higher quality terms that represent truly unique financial and legal concepts 
+- Overall higher quality terms that represent truly unique financial and legal concepts
+
+## Recent Updates
+
+- Enhanced multi-level LLM deduplication with improved prompts focused on conceptual uniqueness
+- Set temperature to 0 for all model calls to ensure deterministic outputs
+- Added randomization for processing order of input CSV files for better testing variability
+- Created a GitHub repository for better version control and collaboration
+- Added comprehensive documentation with usage examples 
